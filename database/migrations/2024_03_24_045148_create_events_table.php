@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string('state');
             $table->string('postalCode');
             $table->string('country');
-            $table->float('latitude');
-            $table->float('longitude');
+            $table->decimal('latitude', 10, 7);
+            $table->decimal('longitude', 10, 7);
             $table->text('description');
             $table->text('speakers');
             $table->timestamps();
