@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Agenda;
 use Illuminate\Http\Request;
+use Illuminate\Http\Requests\StoreAgendaRequest;
+use Illuminate\Http\Requests\UpdateAgendaRequest;
 
 class AgendaController extends Controller
 {
@@ -26,7 +28,7 @@ class AgendaController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreAgendaRequest $request)
     {
         //
     }
@@ -50,7 +52,7 @@ class AgendaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Agenda $agenda)
+    public function update(UpdateAgendaRequest $request, Agenda $agenda)
     {
         //
     }
